@@ -1,0 +1,27 @@
+
+    <!-- INCLUDE HEADER USING JINJA HERE-->
+    {% include 'base.html' %}
+<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header" >
+				<span class="image fit primary"><img src="{{ url_for('static', filename='images/porche.jpg') }}" alt="" /></span>
+				<header class="major">
+					<h1>MOSES' BLOG</h1>
+					<p>A list of my projects as well as my random musings</p>
+				</header>
+				<div class="container">
+					<ul class="actions special">
+						<li><a href="{{url_for('add_new_post')}}" class="button primary scrolly">Make Post</a></li>
+					</ul>
+				</div>
+			</section>
+
+        <!-- One -->
+			<section id="one" class="main special">
+					<span class="image fit primary"><img src="{{ url_for('static', filename='images/workspace.jpg') }}" alt="" /></span>
+
+            </section>
+</body>
+    {% include "footer.html" %}
+

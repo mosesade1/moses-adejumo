@@ -1,0 +1,46 @@
+		<!-- Footer -->
+			<section id="footer">
+
+				<div class="container">
+					<header class="major">
+						<span class="image fit primary"><img src="{{ url_for('static', filename='images/papa.jpeg') }}" alt="" /></span>
+						<h2>Get in touch</h2>
+					</header>
+					<form method="post" action="{{ url_for('home') }}">
+						<div class="row gtr-uniform">
+							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+							<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+							<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+							<div class="col-12">
+								<ul class="actions special">
+									<li><input type="submit" value="Send Message" class="primary" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</div>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://github.com/mosesade1" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://web.facebook.com/adejumo.moses.16" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#footer" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Moses Adejumo</li>
+						<li>My Blog <a href="{{url_for('blog')}}">blog</a></li>
+						<li>Hire Me <a href="https://www.upwork.com/o/profiles/users/~01dc2c1dc0e25cbc9/">Upwork</a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="static/assets/js/browser.min.js"></script>
+			<script src="static/assets/js/breakpoints.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
+
+	</body>
+</html>
